@@ -10,6 +10,9 @@ public class Theatre {
         Director director1 = new Director("Семён", "Лобанов", Gender.MALE, 14);
         Director director2 = new Director("Анастасия", "Кудрявцева", Gender.FEMALE, 7);
 
+        Person choreographer =  new Person("Наталья", "Пивоварова", Gender.FEMALE);
+        Person musicAuthor = new Person("Андрей",  "Губин", Gender.MALE);
+
 
 
         ArrayList<Actor> listOfActorsShow = new ArrayList<>();
@@ -17,8 +20,8 @@ public class Theatre {
         ArrayList<Actor> listOfActorsBallet = new ArrayList<>();
 
         Show show = new Show("Пираты Монголии", 120, director1, listOfActorsShow);
-        Opera opera = new Opera("Опера Круто", 90, director2, listOfActorsOpera, "Позитивчик", "Лалалалал", 12);
-        Ballet ballet = new Ballet("Лебединое Море", 60, director1, listOfActorsBallet, "Негативчик", "Тралалала", "Наталья Пивоварова");
+        Opera opera = new Opera("Опера Круто", 90, director2, listOfActorsOpera, musicAuthor, "Лалалалал", 12);
+        Ballet ballet = new Ballet("Лебединое Море", 60, director1, listOfActorsBallet, musicAuthor, "Тралалала", choreographer);
 
         show.addActorInShow(actor1);
         opera.addActorInShow(actor2);
